@@ -406,7 +406,7 @@ button { font-family: inherit; cursor: pointer; background: none; border: none; 
    ========================= */
 .nav-mobile-cta { display: none; }
 .nav-mobile-dd { display: none; }
-.mobile-grid { display: none; }
+.nav-mobile-gift { display: none; }
 
 .burger {
   display: none;
@@ -975,18 +975,13 @@ footer {
   .nav-mobile-dd + .burger { margin-left: 0.25rem; }
   .nav-mobile-dd .actions-dd-btn { padding: 0.5rem 0.95rem; font-size: 0.8rem; }
 
-  /* V3 : grille 2×2 des 4 boutons sous le header */
-  body.v3 .nav-mobile-cta { display: none; }
-  body.v3 .burger { margin-left: auto; }
-
-  .mobile-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0.5rem;
-    padding: 0.15rem 0.9rem 0.75rem;
+  /* V3 : Réserver + icône bon cadeau sur la même ligne que le burger */
+  .nav-mobile-gift {
+    display: inline-flex;
+    padding: 0.5rem 0.65rem;
   }
 
-  .mobile-grid .btn { padding: 0.5rem 0.4rem; font-size: 0.76rem; }
+  .nav-mobile-gift .icon { width: 1.1rem; height: 1.1rem; }
 
   body.v3 .nav-inner {
     display: flex;
